@@ -55,8 +55,26 @@ By comparing simulation results with theoretical intuition, you’ll see how **i
 
 ## 📊 Output
 
-The program prints **percentages for each last-unvisited node** (excluding `0`, which cannot be last because it is the starting location).
+The program prints **percentages for each last-unvisited node** (excluding `12`, which cannot be last because it is the starting location).
 
+After running 5 million iterations, we get the follow results
+
+| Number | Percentage Time it is the Last Number |
+| :----: | :-----------------------------------: |
+ 1 |  9.098%
+ 2 |  9.100%
+ 3 |  9.083%
+ 4 |  9.103%
+ 5 |  9.101%
+ 6 |  9.075%
+ 7 |  9.100%
+ 8 |  9.095%
+ 9 |  9.099%
+10 |  9.085%
+11 |  9.062%
+
+
+So, overall, we see that each number of the clock face is equally likely to the the last unvisited number for a cyclical random walk. This is perhaps slightly counterintuitive given 6 is further way from the initial starting point of 12. However, it appears that all values are equally likely, with a probability of $\frac{1}{11}$.
 
 ## 🧩 Why It Matters
 
