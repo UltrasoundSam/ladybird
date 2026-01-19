@@ -1,5 +1,7 @@
 use rand::Rng;
 use std::collections::HashSet;
+use rayon::prelude::*;
+
 
 const N: i32 = 12;
 
@@ -32,7 +34,7 @@ fn main() {
 
     // Create a iterator over the iterations
     let results: Vec<i32> = (0..iterations)
-        .into_iter()
+        .into_par_iter()
         .map(|_| {
             let mut rng = rand::rng();
             run_iteration(&mut rng)
