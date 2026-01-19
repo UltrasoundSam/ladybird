@@ -97,4 +97,4 @@ Install via `Cargo.toml`; see the code examples in this repository for usage.
 
 ## 📜 License
 
-This project is available under the MIT License.
+This project is available under the [MIT License](./License).
